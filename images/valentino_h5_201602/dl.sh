@@ -1,0 +1,13 @@
+#! /bin/bash
+wget 'http://app.socialvalue.cn/images/valentino_h5_201602/3-1-%E4%B8%8A.gif'
+wget 'http://app.socialvalue.cn/images/valentino_h5_201602/3-1-%E4%B8%8B.gif'
+wget 'http://app.socialvalue.cn/images/valentino_h5_201602/3-2.jpg'
+wget 'http://app.socialvalue.cn/images/valentino_h5_201602/3-2-%E4%B8%8A.gif'
+wget 'http://app.socialvalue.cn/images/valentino_h5_201602/3-2-%E4%B8%8B.gif'
+wget 'http://app.socialvalue.cn/images/valentino_h5_201602/3-3.jpg'
+wget 'http://app.socialvalue.cn/images/valentino_h5_201602/video2.jpg'
+wget 'http://app.socialvalue.cn/images/valentino_h5_201602/4-1.jpg'
+wget 'http://app.socialvalue.cn/images/valentino_h5_201602/4-1-%E4%B8%8A.gif'
+wget 'http://app.socialvalue.cn/images/valentino_h5_201602/4-1-%E4%B8%8B.gif'
+wget 'http://app.socialvalue.cn/images/valentino_h5_201602/4-2.jpg'
+wget 'http://app.socialvalue.cn/images/valentino_h5_201602/4-2-%E4%B8%8A.gif'

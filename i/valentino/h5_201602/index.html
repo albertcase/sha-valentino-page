@@ -59,7 +59,7 @@
 					<img src="../../../images/valentino_h5_201602/2-3.jpg" />
 					<div class="pic-3" onclick="openVideo1();">
 					<video  width="100%" controls id="video1" preload="none" my-video-player>
-						<source src="http://mp4.socialvalue.cn/video1.mp4" type="video/mp4">
+						<source src="../../../video1.mp4" type="video/mp4">
 					</video>
 					<img id="img1" class="showimg" src="../../../images/valentino_h5_201602/video1.JPG">
 					</div>
@@ -95,7 +95,7 @@
 					<img src="http://app.socialvalue.cn/images/valentino_h5_201602/3-3.jpg" />
 					<div class="pic-3" onclick="openVideo2();">
 					<video  width="100%" controls class="pic3" id="video2" preload="none" my-video-player>
-						<source src="http://mp4.socialvalue.cn/video2.mp4" type="video/mp4">
+						<source src="../../../video/video2.mp4" type="video/mp4">
 					</video>
 					<img id="img2" class="showimg" src="http://app.socialvalue.cn/images/valentino_h5_201602/video2.jpg">
 					</div>
@@ -131,7 +131,7 @@
 					<img src="../../../images/valentino_h5_201602/4-3.jpg" />
 					<div class="pic-3" onclick="openVideo3();">
 					<video  width="100%" controls id="video3" preload="none" my-video-player>
-						<source src="http://mp4.socialvalue.cn/video3.mp4" type="video/mp4">
+						<source src="../../../video/video3.mp4" type="video/mp4">
 					</video>
 					<img id="img3" class="showimg" src="../../../images/valentino_h5_201602/video3.JPG">
 					</div>
@@ -151,6 +151,8 @@
 	<script src="../../../javascripts/valentino_h5_201602/index-v=1.js"></script>
 	<script src="../../../javascripts/valentino_h5_201602/wxShare-v=1.js"></script>
 	<script type="text/javascript">
+  var hostname = window.location.protocol+"//"+window.location.host+window.location.pathname;
+  var cupath = hostname.replace(/[^\/]*$/, "");
 	function openVideo1() {
 		$("#img1").hide();
 			var e = document.getElementById("video1");
@@ -183,8 +185,8 @@
         wx.ready(function() {
             wx.onMenuShareAppMessage({
                 title: '迷彩型格 百变绅士',
-                link: 'http://app.socialvalue.cn/i/valentino/h5_201602/',
-                imgUrl: 'http://app.socialvalue.cn/images/valentino_h5_201602/share.jpg',
+                link: hostname,
+                imgUrl: cupath+"share.png",
                 desc: '你是哪一种迷彩绅士？ ',
                 success: function () {
                 },
@@ -194,8 +196,8 @@
             wx.onMenuShareTimeline({
                 // 朋友圈
                 title: '迷彩型格 百变绅士',
-                link: 'http://app.socialvalue.cn/i/valentino/h5_201602/',
-                imgUrl: 'http://app.socialvalue.cn/images/valentino_h5_201602/share.jpg',
+                link: hostname,
+                imgUrl: cupath+"share.png",
                 success: function () {
                 },
                 cancel: function () {
