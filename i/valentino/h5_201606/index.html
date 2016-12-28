@@ -582,8 +582,8 @@ var cupath = hostname.replace(/[^\/]*$/, "");
         wx.ready(function() {
             wx.onMenuShareAppMessage({
                 title: '诗意蜕变 | Valentino 2017春夏女装系列',
-                link: 'http://app.socialvalue.cn/i/valentino/h5_201606/index',
-                imgUrl: 'http://app.socialvalue.cn/images/valentino_h5_201606/share.png',
+								link: hostname,
+                imgUrl: cupath+"share.png",
                 desc: '华美而神圣，雅致而梦幻，感受Valentino2017春夏女装系列',
                 success: function () {
                 },
@@ -593,8 +593,8 @@ var cupath = hostname.replace(/[^\/]*$/, "");
             wx.onMenuShareTimeline({
                 // 朋友圈
                 title: '诗意蜕变 | Valentino 2017春夏女装系列',
-                link: 'http://app.socialvalue.cn/i/valentino/h5_201606/index',
-                imgUrl: 'http://app.socialvalue.cn/images/valentino_h5_201606/share.png',
+								link: hostname,
+                imgUrl: cupath+"share.png",
                 success: function () {
                 },
                 cancel: function () {
@@ -603,6 +603,5 @@ var cupath = hostname.replace(/[^\/]*$/, "");
         });
 	});
 	</script>
-	<script src="../../../javascripts/tracking.js"></script>
 </body>
 </html>
