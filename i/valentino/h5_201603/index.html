@@ -14,6 +14,7 @@
 </head>
 <script src="../../../javascripts/jquery-1.8.3.min.js"></script>
 <script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+<!-- <script type="text/javascript" src="/api/v1/js/60c4349e-c302-4313-9fa8-37a8ebd59853/wechat?debug=1"></script> -->
 <script src="../../../javascripts/valentino_h5_201601/jquery.event.move.js"></script>
 <script src="../../../javascripts/valentino_h5_201601/jquery.event.swipe.js"></script>
 <body>
@@ -21,7 +22,7 @@
 		<div class="page active-page" id="page" style="background-color: #000000;">
 			<div class="home-banner" onclick="openVideo()">
 				<video width="100%" controls class="video" id="video" preload="none" my-video-player>
-					<source src="http://mp4.socialvalue.cn/show03.mp4" type="video/mp4">
+					<source src="../../../video/show03.mp4" type="video/mp4">
 				</video>
 				<img id="showimg" style="width:100%;height:100%" src="../../../images/valentino_h5_201603/16ssshouw_02.jpg">
 			</div>
@@ -515,19 +516,19 @@ var cupath = hostname.replace(/[^\/]*$/, "");
 
     $(function() {
 		// wxShareBase(1482833300,'5eA9nvtK4e69PBwk','e6fdf38dc916264831b4c4ac77cf7b5ecf57ea9d');
-        wx.config({
-            debug: false,
-            appId: 'wx8f70772299ecb44b',
-            timestamp: 1482833300,
-            nonceStr: '5eA9nvtK4e69PBwk',
-            signature: 'e6fdf38dc916264831b4c4ac77cf7b5ecf57ea9d',
-            jsApiList: [ 'onMenuShareTimeline', 'onMenuShareAppMessage', 'onMenuShareQQ', 'onMenuShareWeibo', 'hideMenuItems', 'showMenuItems',
-                'hideAllNonBaseMenuItem', 'showAllNonBaseMenuItem', 'translateVoice', 'startRecord', 'stopRecord', 'onRecordEnd', 'playVoice',
-                'pauseVoice', 'stopVoice', 'uploadVoice', 'downloadVoice', 'chooseImage', 'previewImage', 'uploadImage', 'downloadImage',
-                'getNetworkType', 'openLocation', 'getLocation', 'hideOptionMenu', 'showOptionMenu', 'closeWindow', 'scanQRCode', 'chooseWXPay',
-                'openProductSpecificView', 'addCard', 'chooseCard', 'openCard'
-            ]
-        });
+        // wx.config({
+        //     debug: false,
+        //     appId: 'wx8f70772299ecb44b',
+        //     timestamp: 1482833300,
+        //     nonceStr: '5eA9nvtK4e69PBwk',
+        //     signature: 'e6fdf38dc916264831b4c4ac77cf7b5ecf57ea9d',
+        //     jsApiList: [ 'onMenuShareTimeline', 'onMenuShareAppMessage', 'onMenuShareQQ', 'onMenuShareWeibo', 'hideMenuItems', 'showMenuItems',
+        //         'hideAllNonBaseMenuItem', 'showAllNonBaseMenuItem', 'translateVoice', 'startRecord', 'stopRecord', 'onRecordEnd', 'playVoice',
+        //         'pauseVoice', 'stopVoice', 'uploadVoice', 'downloadVoice', 'chooseImage', 'previewImage', 'uploadImage', 'downloadImage',
+        //         'getNetworkType', 'openLocation', 'getLocation', 'hideOptionMenu', 'showOptionMenu', 'closeWindow', 'scanQRCode', 'chooseWXPay',
+        //         'openProductSpecificView', 'addCard', 'chooseCard', 'openCard'
+        //     ]
+        // });
         wx.ready(function() {
             wx.onMenuShareAppMessage({
                 title: '舞之绮梦|Valentino2016秋冬女装系列',

@@ -14,6 +14,7 @@
 </head>
 <script src="../../../javascripts/jquery-1.8.3.min.js"></script>
 <script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+<!-- <script type="text/javascript" src="/api/v1/js/60c4349e-c302-4313-9fa8-37a8ebd59853/wechat?debug=1"></script> -->
 <script src="../../../javascripts/valentino_h5_201601/jquery.event.move.js"></script>
 <script src="../../../javascripts/valentino_h5_201601/jquery.event.swipe.js"></script>
 <body>
@@ -21,7 +22,7 @@
 		<div class="page active-page" id="page" style="background-color: #000000;">
 			<div class="home-banner" onclick="openVideo()">
 				<video width="100%" controls class="video" id="video" preload="none" my-video-player>
-					<source src="http://mp4.socialvalue.cn/wss17.mp4" type="video/mp4">
+					<source src="../../../video/wss17.mp4" type="video/mp4">
 				</video>
 				<img id="showimg" style="width:100%;height:100%" src="../../../images/valentino_h5_201606/17wssshow_02.jpg">
 			</div>
@@ -566,19 +567,19 @@ var cupath = hostname.replace(/[^\/]*$/, "");
 
     $(function() {
 		// wxShareBase(1482833199,'E0E1KrjrOFDD6Pya','952054da4d91e591b9976e68d7d6d5532010331d');
-        wx.config({
-            debug: false,
-            appId: 'wx8f70772299ecb44b',
-            timestamp: 1482833199,
-            nonceStr: 'E0E1KrjrOFDD6Pya',
-            signature: '952054da4d91e591b9976e68d7d6d5532010331d',
-            jsApiList: [ 'onMenuShareTimeline', 'onMenuShareAppMessage', 'onMenuShareQQ', 'onMenuShareWeibo', 'hideMenuItems', 'showMenuItems',
-                'hideAllNonBaseMenuItem', 'showAllNonBaseMenuItem', 'translateVoice', 'startRecord', 'stopRecord', 'onRecordEnd', 'playVoice',
-                'pauseVoice', 'stopVoice', 'uploadVoice', 'downloadVoice', 'chooseImage', 'previewImage', 'uploadImage', 'downloadImage',
-                'getNetworkType', 'openLocation', 'getLocation', 'hideOptionMenu', 'showOptionMenu', 'closeWindow', 'scanQRCode', 'chooseWXPay',
-                'openProductSpecificView', 'addCard', 'chooseCard', 'openCard'
-            ]
-        });
+        // wx.config({
+        //     debug: false,
+        //     appId: 'wx8f70772299ecb44b',
+        //     timestamp: 1482833199,
+        //     nonceStr: 'E0E1KrjrOFDD6Pya',
+        //     signature: '952054da4d91e591b9976e68d7d6d5532010331d',
+        //     jsApiList: [ 'onMenuShareTimeline', 'onMenuShareAppMessage', 'onMenuShareQQ', 'onMenuShareWeibo', 'hideMenuItems', 'showMenuItems',
+        //         'hideAllNonBaseMenuItem', 'showAllNonBaseMenuItem', 'translateVoice', 'startRecord', 'stopRecord', 'onRecordEnd', 'playVoice',
+        //         'pauseVoice', 'stopVoice', 'uploadVoice', 'downloadVoice', 'chooseImage', 'previewImage', 'uploadImage', 'downloadImage',
+        //         'getNetworkType', 'openLocation', 'getLocation', 'hideOptionMenu', 'showOptionMenu', 'closeWindow', 'scanQRCode', 'chooseWXPay',
+        //         'openProductSpecificView', 'addCard', 'chooseCard', 'openCard'
+        //     ]
+        // });
         wx.ready(function() {
             wx.onMenuShareAppMessage({
                 title: '诗意蜕变 | Valentino 2017春夏女装系列',
